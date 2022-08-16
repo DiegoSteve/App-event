@@ -1,0 +1,85 @@
+html, body {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    height: 100%;
+    width: 100%;
+    @include center-flex-column;
+}
+
+.card {
+    box-shadow: 0 0 5px black;
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.navbar_menu {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 120px;
+    grid-template-areas: "logo menu_nav burger";
+}
+
+.logo {
+ grid-area: logo;
+}
+
+.menu_nav {
+    grid-area: menu_nav;
+}
+
+.burger {
+ grid-area: burger;
+}
+
+.logo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   }
+   
+.menu_nav {
+  display: grid;
+  justify-content: right;
+  align-items: center;
+      
+}
+.menu_options {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  
+}
+  
+
+.menu_option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+   
+  .burger {
+    display: grid;
+}
+
+
+.content {
+    display: flex;
+
+    .rigth{
+       @include center-flex-column;
+    }
+    .left{
+        .chamber {
+            width: 50%;
+        }
+    }
+}
+
+
+
+

@@ -34,15 +34,11 @@ html, body {
 }
 
 .logo {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    @include align_navbar;
    }
    
 .menu_nav {
-  display: grid;
-  justify-content: right;
-  align-items: center;
+    @include align_navbar;
       
 }
 .menu_options {
@@ -55,15 +51,14 @@ html, body {
   
 
 .menu_option {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include align_navbar;
     
   }
 
    
   .burger {
-    display: grid;
+    @include align_navbar;
+    
 }
 
 

@@ -16,3 +16,9 @@
     place-items: center;
   }
   
+  @mixin align_navbar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+  }

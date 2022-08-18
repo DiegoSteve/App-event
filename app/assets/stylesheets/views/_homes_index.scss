@@ -65,18 +65,36 @@ html, body {
 .content-info {
     display: flex;
     margin: 0 5%;
+    height: 70%;
 
-    .rigth{
+    .right {
        @include center-flex-column;
-       
+       width: 50%;
+
+       p {
+        text-align: center;
+        margin: 0 40px;
+        font-weight: 400;
+        font-size: xx-large;
+        color: lightcoral;
+       }
+
+       .button {
+        box-shadow: 0 0 1px black;
+        border-radius: 15px;
+        width: 40%;
+        margin-top: 25%;
+        height: 10%;
+        font-size: larger;
+        background-color: coral;
+       }
     }
-    .left{
+    .left {
+        @include center-flex-column;
+        width: 50%;
         .chamber {
-            width: 50%;
+            width: 100%;
+            border-radius: 20px;
         }
     }
 }
-
-
-
-

@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  event_date: 2022-08-17
+  start_time: 2022-08-17 22:37:46
+  end_time: 2022-08-17 22:37:46
+  address: MyString
+  event_type: false
+  table_number: 1
+  personal_requirements: MyString
+  lounge_name: MyString
+
+two:
+  title: MyString
+  description: MyString
+  event_date: 2022-08-17
+  start_time: 2022-08-17 22:37:46
+  end_time: 2022-08-17 22:37:46
+  address: MyString
+  event_type: false
+  table_number: 1
+  personal_requirements: MyString
+  lounge_name: MyString

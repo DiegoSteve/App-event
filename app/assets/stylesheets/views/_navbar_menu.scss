@@ -1,0 +1,120 @@
+.navbar_menu {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 120px;
+    grid-template-areas: "logo menu_nav burger";
+}
+
+.logo {
+ grid-area: logo;
+}
+
+.menu_nav {
+    grid-area: menu_nav;
+}
+
+.burger {
+ grid-area: burger;
+}
+
+.logo {
+    @include align_navbar;
+   }
+   
+.menu_nav {
+    @include align_navbar;
+      
+}
+.menu_options {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  
+}
+  
+
+.menu_option {
+    @include align_navbar;
+    
+  }
+
+   
+  .burger {
+    display: grid;
+    
+  }
+  
+  .hamburger {
+    display: inline-block;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  
+  .hamburger_bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out; 
+    background-color: #297F87;
+  }
+  
+  @media(max-width: 920px ){
+    .hamburger{
+      display: block;
+    }
+    .hamburger.active .hamburger_bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .hamburger_bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .hamburger_bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu_option {
+        display: block;
+        position: fixed;
+        left: -100%;
+        top: 120px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        opacity: 0;
+        width: 30%;
+        height: 100px;
+        text-align: left;
+        transition: 0.3s;
+        border-radius: 0;
+        padding: 20px;
+        
+      }
+      .menus_option { 
+        margin: 90px 0; 
+        list-style-type: none; 
+            
+      }
+    
+      .menu_link {
+        color: #297F87;
+        font-size: 2rem;
+        text-decoration: none;
+        
+      
+    
+        
+      }
+      .menu_option.active{
+        left: 10%;
+        height: 60%;
+        background-color: $yellow-color;
+        opacity: 90%;
+      } 
+     
+
+  }

@@ -77,24 +77,31 @@
       transform: translateY(-8px) rotate(-45deg);
     }
 
-    .menu_option {
-        display: block;
+    .menu_options.active {
+      left: 10%;
+      height: 30%;
+      background-color: $yellow-color;
+      color: #297F87;
+      opacity: 90%;
+    } 
+    .menu_options {
+        display: flex;
         position: fixed;
+        gap: 1rem;
         left: -100%;
         top: 120px;
-        gap: 0;
-        flex-direction: column;
-        background-color: black;
-        opacity: 0;
+        flex-direction: column-reverse;
+        opacity: 0%;
         width: 30%;
         height: 100px;
-        text-align: left;
         transition: 0.3s;
         border-radius: 0;
         padding: 20px;
+        text-align: left;
         
       }
-      .menus_option { 
+
+      .menu_options { 
         margin: 90px 0; 
         list-style-type: none; 
             
@@ -102,19 +109,10 @@
     
       .menu_link {
         color: #297F87;
-        font-size: 2rem;
-        text-decoration: none;
-        
-      
-    
+        font-size: 1.2rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none; 
         
       }
-      .menu_option.active{
-        left: 10%;
-        height: 60%;
-        background-color: $yellow-color;
-        opacity: 90%;
-      } 
-     
-
+      
   }

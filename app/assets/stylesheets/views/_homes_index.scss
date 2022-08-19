@@ -1,9 +1,10 @@
 html, body {
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    //background-color: #8EC5FC;
+    //background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     height: 100%;
     width: 100%;
     @include center-flex-column;
+    background-color: #607EAA;
 }
 
 .card {
@@ -13,54 +14,6 @@ html, body {
     background-color: white;
     border-radius: 25px;
 }
-
-.navbar_menu {
-    display: grid;
-    grid-template-columns: 150px 1fr 150px;
-    grid-template-rows: 120px;
-    grid-template-areas: "logo menu_nav burger";
-}
-
-.logo {
- grid-area: logo;
-}
-
-.menu_nav {
-    grid-area: menu_nav;
-}
-
-.burger {
- grid-area: burger;
-}
-
-.logo {
-    @include align_navbar;
-   }
-   
-.menu_nav {
-    @include align_navbar;
-      
-}
-.menu_options {
-  display: flex;
-  align-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  
-}
-  
-
-.menu_option {
-    @include align_navbar;
-    
-  }
-
-   
-  .burger {
-    @include align_navbar;
-    
-}
-
 
 .content-info {
     display: flex;
@@ -85,15 +38,16 @@ html, body {
         width: 40%;
         margin-top: 25%;
         height: 10%;
-        font-size: larger;
-        background-color: coral;
+        font-size: medium;
+        background-color: #1C3879;
+        color: white;
        }
     }
     .left {
         @include center-flex-column;
         width: 50%;
         .chamber {
-            width: 100%;
+            width: 60%;
             border-radius: 20px;
         }
     }

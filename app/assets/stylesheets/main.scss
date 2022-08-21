@@ -5,4 +5,7 @@
 @import 'abstracts/classes';
 @import 'base/base';
 @import 'views/homes_index';
-@import 'views/navbar_menu';
+@import 'components/navbar_menu';
+@import 'views/devise/sign_up';
+@import 'views/devise/sign_in';
+@import 'views/devise/edit_user';

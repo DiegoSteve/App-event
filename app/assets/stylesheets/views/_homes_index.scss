@@ -33,6 +33,7 @@ html, body {
        }
 
        .button {
+        @include center-flex-column;
         box-shadow: 0 0 1px black;
         border-radius: 15px;
         width: 40%;

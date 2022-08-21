@@ -18,10 +18,9 @@
           <a href="#" class="menu_link">Check Invites</a>
         </li>
         <li class="menu_option">
-          <a href="#" class="menu_link">Sign Up</a>
-        </li>
+          <%= link_to "Sign_up", new_user_registration_path, class: "menu_link"%> 
         <li class="menu_option">
-          <a href="#" class="menu_link">Login</a>
+          <%= link_to "Log_in", new_user_session_path, class: "menu_link"%> 
         </li>
        </ul>
     </div>  
@@ -37,7 +36,7 @@
     <div class="content-info">
         <div class="right">
             <p>!Empieza ya a organizar, crear y verificar tus eventos... Recuerda que no hay fiesta sin invitados¡</p>
-             <%= button_tag "Crea ya mismo tu evento", class: "button"%>
+             <%= link_to "Crea ya mismo tu evento", new_user_registration_path, class: "button"%>
         </div>
         <div class="left">
             <%= image_tag "party2.webp", class:"chamber"%>
